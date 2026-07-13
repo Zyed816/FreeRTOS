@@ -1,0 +1,38 @@
+# Keil MDK: per-user settings
+*.uvguix.*
+*.uvoptx
+
+# Keil MDK: build output directories
+**/MDK-ARM/Objects/
+**/MDK-ARM/Listings/
+
+# Compiler and linker outputs
+*.o
+*.obj
+*.d
+*.crf
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lnp
+*.dep
+*.lst
+
+# Keil-generated reports and temporary files
+*.build_log.htm
+**/MDK-ARM/*/*.htm
+**/MDK-ARM/*/*.sct
+*.tmp
+
+# Editor and operating-system metadata
+/.agents/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+.agents/
