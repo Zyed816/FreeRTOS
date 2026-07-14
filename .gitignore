@@ -35,4 +35,8 @@ Thumbs.db
 *.swp
 *~
 
+# CSDN publishing files
+/Export-CsdnNotes.ps1
+*.csdn.md
+
 .agents/
