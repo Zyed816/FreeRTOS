@@ -535,7 +535,7 @@ while (1)
 
 FreeRTOS中使用链表管理不同优先级的任务，包括就绪链表（共56个优先级，因此有56个链表），阻塞链表和暂停链表
 
-新建任务时，将任务TCB添加到对应优先级任务链表，同时更新当前任务指针`pxCurrentTCB`，如果当前任务优先级高于`pxCurrentTCB`所指任务优先级，让`pxCurrentTCB`指向当前任务，最终实现`pxCurrentTCB`指向最高优先级任务链表尾端
+新建任务时，将任务TCB添加到对应优先级任务链表，同时更新当前任务指针`pxCurrentTCB`，如果当前任务优先级高于`pxCurrentTCB`所指任务优先级，让`pxCurrentTCB`指向当前任务，最终实现`pxCurrentTCB`指向**最高优先级任务链表尾端**
 
 开始执行任务后，根据Tick的值，每隔一段时间发生Tick中断产生以下效果：
 
